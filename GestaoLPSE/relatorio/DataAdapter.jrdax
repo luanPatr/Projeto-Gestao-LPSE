@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<jdbcDataAdapter class="net.sf.jasperreports.data.jdbc.JdbcDataAdapterImpl">
+  <name>New Data Adapter 1</name>
+  <driver>org.sqlite.JDBC</driver>
+  <username></username>
+  <password></password>
+  <url>jdbc:sqlite:C:\Users\Luan Souza\Desktop\Verssões projeto lp2\GestaoLPSE_v3\GestaoLPSE\resources\bdcgestaolpse.db</url>
+  <database></database>
+  <savePassword>true</savePassword>
+  <serverAddress></serverAddress>
+</jdbcDataAdapter>

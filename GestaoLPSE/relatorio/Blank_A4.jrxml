@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.6.final using JasperReports Library version 6.20.6-5c96b6aa8a39ac1dc6b6bea4b81168e16dd39231  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="65c73f6b-ff6f-4018-b59e-1acc55639571">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="relatorio\DataAdapter.jrdax"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<parameter name="QUERY" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[$P!{QUERY}]]>
+	</queryString>
+	<field name="id_orcamento" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="id_orcamento"/>
+		<property name="com.jaspersoft.studio.field.label" value="id_orcamento"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="ORCAMENTO"/>
+	</field>
+	<field name="status_orcamento" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="status_orcamento"/>
+		<property name="com.jaspersoft.studio.field.label" value="status_orcamento"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="ORCAMENTO"/>
+	</field>
+	<field name="quantidade_orcamento" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="quantidade_orcamento"/>
+		<property name="com.jaspersoft.studio.field.label" value="quantidade_orcamento"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="ORCAMENTO"/>
+	</field>
+	<field name="valor_orcamento" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="valor_orcamento"/>
+		<property name="com.jaspersoft.studio.field.label" value="valor_orcamento"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="ORCAMENTO"/>
+	</field>
+	<field name="descricaoServ_orcamento" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="descricaoServ_orcamento"/>
+		<property name="com.jaspersoft.studio.field.label" value="descricaoServ_orcamento"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="ORCAMENTO"/>
+	</field>
+	<field name="tipoServ_orcamento" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="tipoServ_orcamento"/>
+		<property name="com.jaspersoft.studio.field.label" value="tipoServ_orcamento"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="ORCAMENTO"/>
+	</field>
+	<field name="data_orcamento" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="data_orcamento"/>
+		<property name="com.jaspersoft.studio.field.label" value="data_orcamento"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="ORCAMENTO"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="96" splitType="Stretch">
+			<staticText>
+				<reportElement x="130" y="10" width="324" height="30" uuid="d1c934de-f1e0-47a2-829f-c337afaf717d"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<text><![CDATA[L&P SOUZA - SOLUÇÕES ELETRICAS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="280" y="50" width="100" height="22" uuid="6896a0d0-f22f-4099-9ab2-aeedb282ed54"/>
+				<text><![CDATA[Valentim Gentil - SP]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="137" y="50" width="143" height="30" uuid="58093860-3b42-4934-8c02-03998275827d"/>
+				<text><![CDATA[Telefone: (17) 99143-0096
+]]></text>
+			</staticText>
+			<image hAlign="Center">
+				<reportElement x="30" y="0" width="90" height="80" uuid="4b225dbc-0f7e-42d3-9fd0-7094d3dcc243"/>
+				<imageExpression><![CDATA["https://uploaddeimagens.com.br/images/004/655/930/original/logoos.png?1699128466"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="161" splitType="Stretch">
+			<textField>
+				<reportElement x="140" y="8" width="363" height="20" uuid="1aa1b80a-26e4-4183-8f1b-26364c667544">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b90ffccb-3b54-4fe1-b858-de16caff2ac7"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{status_orcamento}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="33" y="2" width="101" height="33" uuid="03a98d2b-d9ce-4964-bdd2-ce96e10115eb"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="33" y="35" width="101" height="33" uuid="45ee7aad-b2b0-42f9-b35a-052c04aa7f0d"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="33" y="68" width="101" height="33" uuid="de3f1bbd-5ede-4e23-8b00-0d4d1b0b2565"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="33" y="101" width="101" height="33" uuid="b0951c90-4ad9-4089-96c1-4c3e4bff740c"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="33" y="102" width="100" height="30" uuid="8ce9b464-5783-43f7-bf5c-08ab8d292faf"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Quantidade:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="33" y="3" width="100" height="30" uuid="15a618e4-0cda-4975-b9cd-9647fb813d79"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Cliente:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="33" y="35" width="100" height="31" uuid="da4d81e6-c7b1-44f8-89c4-bbf09a4a1a4b"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom"/>
+				<text><![CDATA[Data:
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="33" y="69" width="100" height="30" uuid="0137f5b8-62cb-43dc-8e9b-27309e7ad8d2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Tipo Serviço:]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement mode="Transparent" x="134" y="35" width="380" height="33" uuid="adb33e74-641f-4a44-9b81-f9c8e4def7f8"/>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Transparent" x="134" y="68" width="380" height="33" uuid="60627765-509a-485e-a0de-a79fbee4a4c8"/>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Transparent" x="134" y="101" width="380" height="33" uuid="762fe8f2-9c83-4fdd-aae2-6b7638e5e12f"/>
+			</rectangle>
+			<textField>
+				<reportElement x="140" y="40" width="363" height="20" uuid="449f0938-c18a-4729-8db3-036b7775d464">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ce012cb0-453b-4757-8506-2f4b5c0b7af5"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{data_orcamento}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="140" y="66" width="363" height="30" uuid="fcc706c0-a4be-4705-a066-d0799700f3b5">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f38865c9-e8e8-4f8d-bac1-e8b049d9312a"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{tipoServ_orcamento}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement mode="Transparent" x="134" y="2" width="380" height="33" uuid="a11e94c0-07a8-4c1b-aa68-e11bff13ec08"/>
+			</rectangle>
+			<textField>
+				<reportElement x="140" y="102" width="363" height="30" uuid="7611cb35-a701-4dff-be09-ce9f3ee59bd2">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="15c0e7c4-daba-4f89-9d49-dd093c79871a"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{quantidade_orcamento}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="251" splitType="Stretch">
+			<rectangle>
+				<reportElement mode="Transparent" x="33" y="20" width="481" height="31" uuid="1199cd17-1a5a-46dc-88cb-dcb79eb0adc0"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="187" y="20" width="180" height="30" uuid="61cd4dd4-54a0-4ea2-a01a-e499e4925619"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Descrição:]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="33" y="50" width="481" height="140" uuid="a8aa5087-a07d-4083-9da7-e878fc92e239"/>
+			</rectangle>
+			<textField>
+				<reportElement x="34" y="51" width="480" height="139" uuid="a5853b13-cc59-4add-be31-6194e05e0fad">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="796e786e-0ac1-42bf-8376-2974d20d1bdd"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{descricaoServ_orcamento}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="34" y="214" width="101" height="33" uuid="194009e2-578b-46c6-9d93-33dfcce640df"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="33" y="215" width="100" height="30" uuid="136accb0-f7b0-4a59-910d-f46275bc2597"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom"/>
+				<text><![CDATA[Valor Total
+]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="134" y="214" width="379" height="33" uuid="af817ed8-e6a5-432b-a644-738fc4a24f55"/>
+			</rectangle>
+			<textField>
+				<reportElement x="140" y="220" width="363" height="20" uuid="891fd98d-a507-45ac-a7ba-fbda7539e019">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a284c9b9-ee86-41b5-9544-8e9369dd92ac"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{valor_orcamento}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="111" splitType="Stretch">
+			<staticText>
+				<reportElement x="34" y="20" width="100" height="30" uuid="55e75cb0-1085-4862-baf4-75b5fcd11cf0"/>
+				<text><![CDATA[Assinatura Cliente:
+
+
+]]></text>
+			</staticText>
+			<line>
+				<reportElement x="144" y="40" width="369" height="1" uuid="62e5708d-35d2-4cf4-948e-d420415a4979"/>
+			</line>
+			<staticText>
+				<reportElement x="34" y="62" width="100" height="30" uuid="f9a691d5-9700-475b-9da5-38d5fbb2b24b"/>
+				<text><![CDATA[Assinatura Prestador:]]></text>
+			</staticText>
+			<line>
+				<reportElement x="141" y="92" width="372" height="1" uuid="d9e780d0-5f59-4bdc-a723-ec2382166b56"/>
+			</line>
+		</band>
+	</columnFooter>
+</jasperReport>
